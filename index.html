@@ -2,495 +2,434 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Register for ELECTRONOVA 2026 - Explore. Experiment. Engineer the Future.">
-    <title>ELECTRONOVA 2026 | Registration</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-<div class="stars"></div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b1d">
+  <meta name="description" content="Register for ELECTRONOVA 2026 — Explore. Experiment. Engineer the Future.">
 
-<header class="navbar">
-    <a href="#home" class="logo">ELECTRO<span>NOVA</span></a>
-    <nav>
+  <title>ELECTRONOVA 2026 | Registration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="navbar container">
+
+      <a class="logo" href="#home">
+        ELECTRO<span>NOVA</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#details">Event</a>
         <a href="#register">Register</a>
-    </nav>
-    <a href="#register" class="nav-button">Join the Mission ↗</a>
-</header>
+      </nav>
 
-<main>
-    <section class="hero" id="home">
-        <div class="hero-content reveal">
-            <p class="eyebrow">✦ THE FUTURE IS CALLING ✦</p>
-            <h1>ELECTRO<span>NOVA</span><br><small>2026</small></h1>
-            <p class="hero-tagline">Explore. Experiment. Engineer the Future.</p>
-            <p class="hero-description">
-                Step into a universe of electronics, innovation and technology.
-                Discover ideas, build connections and turn imagination into reality.
-            </p>
-            <div class="hero-actions">
-                <a href="#register" class="primary-button">Register Now <span>↗</span></a>
-                <a href="#about" class="secondary-button">Explore Event</a>
-            </div>
-            <div class="hero-meta">
-                <span>📅 06 December 2026</span>
-                <span>📍 VIT Bhopal University</span>
-            </div>
-        </div>
+      <a class="nav-button" href="#register">
+        Join the Mission <span>↗</span>
+      </a>
 
-        <div class="planet-area" aria-hidden="true">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="planet">
-                <div class="planet-glow"></div>
-            </div>
-            <div class="planet-ring"></div>
-            <span class="floating-star star-one">✦</span>
-            <span class="floating-star star-two">✧</span>
-            <span class="floating-star star-three">✦</span>
-            <span class="planet-label">INNOVATION<br>BEYOND LIMITS</span>
-        </div>
-    </section>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <section class="about-section section reveal" id="about">
-        <p class="section-kicker">01 / THE EXPERIENCE</p>
-        <h2>Enter the <span>Future.</span></h2>
-        <p class="section-description">
-            ELECTRONOVA brings together curious minds and technology enthusiasts
-            for an exciting exploration of electronics and the Internet of Things.
-            Be part of an experience where creativity meets engineering.
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section-wrap container" id="home">
+
+      <div class="hero-content reveal">
+
+        <p class="eyebrow">
+          <span>✦</span> THE FUTURE IS CALLING <span>✦</span>
         </p>
-        <div class="feature-grid">
-            <article class="feature-card">
-                <span class="feature-icon">⌘</span>
-                <h3>Innovate</h3>
-                <p>Discover fresh ideas and explore emerging technologies.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-icon">✳</span>
-                <h3>Experiment</h3>
-                <p>Turn concepts into practical and creative experiences.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-icon">⟡</span>
-                <h3>Connect</h3>
-                <p>Meet fellow innovators and expand your network.</p>
-            </article>
-        </div>
-    </section>
 
-    <section class="event-section section reveal" id="details">
-        <p class="section-kicker">02 / SAVE YOUR DATE</p>
-        <h2>The Mission <span>Begins Soon.</span></h2>
-        <div class="event-info">
-            <div><span>EVENT DATES</span><strong>04–06 DECEMBER 2026</strong></div>
-            <div><span>VENUE</span><strong>VIT BHOPAL UNIVERSITY</strong></div>
-            <div><span>DOMAIN</span><strong>ELECTRONICS & IoT</strong></div>
-        </div>
+        <h1>
+          ELECTRO<span>NOVA</span>
+          <small>2026</small>
+        </h1>
 
-        <div class="countdown-panel">
-            <p>COUNTDOWN TO ELECTRONOVA</p>
-            <div class="timer">
-                <div class="time-box"><strong id="days">00</strong><span>DAYS</span></div>
-                <div class="time-box"><strong id="hours">00</strong><span>HOURS</span></div>
-                <div class="time-box"><strong id="minutes">00</strong><span>MINUTES</span></div>
-                <div class="time-box"><strong id="seconds">00</strong><span>SECONDS</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="registration-section section reveal" id="register">
-        <div class="registration-heading">
-            <p class="section-kicker">03 / YOUR JOURNEY STARTS HERE</p>
-            <h2>Ready to <span>Launch?</span></h2>
-            <p>Enter your details and take the first step into ELECTRONOVA 2026.</p>
-        </div>
-
-        <form id="regForm" class="registration-form">
-            <div class="form-grid">
-                <div class="form-field">
-                    <label for="fullName">Full Name *</label>
-                    <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="registrationNumber">Registration Number *</label>
-                    <input id="registrationNumber" name="registrationNumber" type="text" placeholder="Enter your registration number" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="email">Email Address *</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your email address" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="phone">Phone Number *</label>
-                    <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" pattern="[0-9+() -]{7,20}" required>
-                </div>
-
-                <div class="form-field full-width">
-                    <label for="participation">Registration Type *</label>
-                    <select id="participation" name="participation" required>
-                        <option value="">Select registration type</option>
-                        <option value="individual">Individual Registration</option>
-                        <option value="team">Team Registration</option>
-                    </select>
-                </div>
-            </div>
-
-            <p class="form-note">* Required fields. Your details will be used to continue to the registration form.</p>
-            <button type="submit" class="primary-button submit-button">Continue to Registration ↗</button>
-            <p id="formMessage" class="form-message" role="status"></p>
-        </form>
-    </section>
-</main>
-
-<footer class="footer">
-    <a href="#home" class="logo">ELECTRO<span>NOVA</span></a>
-    <p>Explore. Experiment. Engineer the Future.</p>
-    <p class="contact-line">For event queries: <a id="contactEmail" href="#">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Register for ELECTRONOVA 2026 - Explore. Experiment. Engineer the Future.">
-    <title>ELECTRONOVA 2026 | Registration</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-<div class="stars"></div>
-
-<header class="navbar">
-    <a href="#home" class="logo">ELECTRO<span>NOVA</span></a>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#details">Event</a>
-        <a href="#register">Register</a>
-    </nav>
-    <a href="#register" class="nav-button">Join the Mission ↗</a>
-</header>
-
-<main>
-    <section class="hero" id="home">
-        <div class="hero-content reveal">
-            <p class="eyebrow">✦ THE FUTURE IS CALLING ✦</p>
-            <h1>ELECTRO<span>NOVA</span><br><small>2026</small></h1>
-            <p class="hero-tagline">Explore. Experiment. Engineer the Future.</p>
-            <p class="hero-description">
-                Step into a universe of electronics, innovation and technology.
-                Discover ideas, build connections and turn imagination into reality.
-            </p>
-            <div class="hero-actions">
-                <a href="#register" class="primary-button">Register Now <span>↗</span></a>
-                <a href="#about" class="secondary-button">Explore Event</a>
-            </div>
-            <div class="hero-meta">
-                <span>📅 06 December 2026</span>
-                <span>📍 VIT Bhopal University</span>
-            </div>
-        </div>
-
-        <div class="planet-area" aria-hidden="true">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="planet">
-                <div class="planet-glow"></div>
-            </div>
-            <div class="planet-ring"></div>
-            <span class="floating-star star-one">✦</span>
-            <span class="floating-star star-two">✧</span>
-            <span class="floating-star star-three">✦</span>
-            <span class="planet-label">INNOVATION<br>BEYOND LIMITS</span>
-        </div>
-    </section>
-
-    <section class="about-section section reveal" id="about">
-        <p class="section-kicker">01 / THE EXPERIENCE</p>
-        <h2>Enter the <span>Future.</span></h2>
-        <p class="section-description">
-            ELECTRONOVA brings together curious minds and technology enthusiasts
-            for an exciting exploration of electronics and the Internet of Things.
-            Be part of an experience where creativity meets engineering.
+        <p class="hero-tagline">
+          Explore. Experiment. Engineer the Future.
         </p>
-        <div class="feature-grid">
-            <article class="feature-card">
-                <span class="feature-icon">⌘</span>
-                <h3>Innovate</h3>
-                <p>Discover fresh ideas and explore emerging technologies.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-icon">✳</span>
-                <h3>Experiment</h3>
-                <p>Turn concepts into practical and creative experiences.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-icon">⟡</span>
-                <h3>Connect</h3>
-                <p>Meet fellow innovators and expand your network.</p>
-            </article>
-        </div>
-    </section>
 
-    <section class="event-section section reveal" id="details">
-        <p class="section-kicker">02 / SAVE YOUR DATE</p>
-        <h2>The Mission <span>Begins Soon.</span></h2>
-        <div class="event-info">
-            <div><span>EVENT DATES</span><strong>04–06 DECEMBER 2026</strong></div>
-            <div><span>VENUE</span><strong>VIT BHOPAL UNIVERSITY</strong></div>
-            <div><span>DOMAIN</span><strong>ELECTRONICS & IoT</strong></div>
-        </div>
-
-        <div class="countdown-panel">
-            <p>COUNTDOWN TO ELECTRONOVA</p>
-            <div class="timer">
-                <div class="time-box"><strong id="days">00</strong><span>DAYS</span></div>
-                <div class="time-box"><strong id="hours">00</strong><span>HOURS</span></div>
-                <div class="time-box"><strong id="minutes">00</strong><span>MINUTES</span></div>
-                <div class="time-box"><strong id="seconds">00</strong><span>SECONDS</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="registration-section section reveal" id="register">
-        <div class="registration-heading">
-            <p class="section-kicker">03 / YOUR JOURNEY STARTS HERE</p>
-            <h2>Ready to <span>Launch?</span></h2>
-            <p>Enter your details and take the first step into ELECTRONOVA 2026.</p>
-        </div>
-
-        <form id="regForm" class="registration-form">
-            <div class="form-grid">
-                <div class="form-field">
-                    <label for="fullName">Full Name *</label>
-                    <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="registrationNumber">Registration Number *</label>
-                    <input id="registrationNumber" name="registrationNumber" type="text" placeholder="Enter your registration number" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="email">Email Address *</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your email address" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="phone">Phone Number *</label>
-                    <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" pattern="[0-9+() -]{7,20}" required>
-                </div>
-
-                <div class="form-field full-width">
-                    <label for="participation">Registration Type *</label>
-                    <select id="participation" name="participation" required>
-                        <option value="">Select registration type</option>
-                        <option value="individual">Individual Registration</option>
-                        <option value="team">Team Registration</option>
-                    </select>
-                </div>
-            </div>
-
-            <p class="form-note">* Required fields. Your details will be used to continue to the registration form.</p>
-            <button type="submit" class="primary-button submit-button">Continue to Registration ↗</button>
-            <p id="formMessage" class="form-message" role="status"></p>
-        </form>
-    </section>
-</main>
-
-<footer class="footer">
-    <a href="#home" class="logo">ELECTRO<span>NOVA</span></a>
-    <p>Explore. Experiment. Engineer the Future.</p>
-    <p class="contact-line">For event queries: <a id="contactEmail" href="#">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Register for ELECTRONOVA 2026 - Explore. Experiment. Engineer the Future.">
-    <title>ELECTRONOVA 2026 | Registration</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-<div class="stars"></div>
-
-<header class="navbar">
-    <a href="#home" class="logo">ELECTRO<span>NOVA</span></a>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#details">Event</a>
-        <a href="#register">Register</a>
-    </nav>
-    <a href="#register" class="nav-button">Join the Mission ↗</a>
-</header>
-
-<main>
-    <section class="hero" id="home">
-        <div class="hero-content reveal">
-            <p class="eyebrow">✦ THE FUTURE IS CALLING ✦</p>
-            <h1>ELECTRO<span>NOVA</span><br><small>2026</small></h1>
-            <p class="hero-tagline">Explore. Experiment. Engineer the Future.</p>
-            <p class="hero-description">
-                Step into a universe of electronics, innovation and technology.
-                Discover ideas, build connections and turn imagination into reality.
-            </p>
-            <div class="hero-actions">
-                <a href="#register" class="primary-button">Register Now <span>↗</span></a>
-                <a href="#about" class="secondary-button">Explore Event</a>
-            </div>
-            <div class="hero-meta">
-                <span>📅 06 December 2026</span>
-                <span>📍 VIT Bhopal University</span>
-            </div>
-        </div>
-
-        <div class="planet-area" aria-hidden="true">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="planet">
-                <div class="planet-glow"></div>
-            </div>
-            <div class="planet-ring"></div>
-            <span class="floating-star star-one">✦</span>
-            <span class="floating-star star-two">✧</span>
-            <span class="floating-star star-three">✦</span>
-            <span class="planet-label">INNOVATION<br>BEYOND LIMITS</span>
-        </div>
-    </section>
-
-    <section class="about-section section reveal" id="about">
-        <p class="section-kicker">01 / THE EXPERIENCE</p>
-        <h2>Enter the <span>Future.</span></h2>
-        <p class="section-description">
-            ELECTRONOVA brings together curious minds and technology enthusiasts
-            for an exciting exploration of electronics and the Internet of Things.
-            Be part of an experience where creativity meets engineering.
+        <p class="hero-description">
+          Step into a universe of electronics, innovation and technology.
+          Discover ideas, build connections and turn imagination into reality.
         </p>
-        <div class="feature-grid">
-            <article class="feature-card">
-                <span class="feature-icon">⌘</span>
-                <h3>Innovate</h3>
-                <p>Discover fresh ideas and explore emerging technologies.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-icon">✳</span>
-                <h3>Experiment</h3>
-                <p>Turn concepts into practical and creative experiences.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-icon">⟡</span>
-                <h3>Connect</h3>
-                <p>Meet fellow innovators and expand your network.</p>
-            </article>
+
+        <div class="hero-actions">
+          <a href="#register" class="button button-primary">
+            Register Now <span>↗</span>
+          </a>
+
+          <a href="#about" class="button button-secondary">
+            Explore Event
+          </a>
         </div>
+
+        <div class="hero-meta">
+          <span>▦ 06 December 2026</span>
+          <span>⌖ VIT Bhopal University</span>
+        </div>
+
+      </div>
+
+      <!-- SPACE PLANET DESIGN -->
+      <div class="planet-scene" aria-hidden="true">
+
+        <div class="planet-orbit orbit-a"></div>
+        <div class="planet-orbit orbit-b"></div>
+
+        <div class="planet-halo"></div>
+
+        <div class="planet">
+          <div class="planet-shine"></div>
+        </div>
+
+        <div class="planet-ring"></div>
+
+        <span class="planet-star star-a">✦</span>
+        <span class="planet-star star-b">✧</span>
+        <span class="planet-star star-c">✦</span>
+
+        <div class="planet-caption">
+          INNOVATION
+          <br>
+          <strong>BEYOND LIMITS</strong>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom-label">
+        ELECTRONICS · INNOVATION · IoT
+      </div>
+
     </section>
 
-    <section class="event-section section reveal" id="details">
-        <p class="section-kicker">02 / SAVE YOUR DATE</p>
-        <h2>The Mission <span>Begins Soon.</span></h2>
+    <!-- ABOUT SECTION -->
+    <section class="section container reveal" id="about">
+
+      <div class="section-heading">
+
+        <p class="section-kicker">
+          01 / THE EXPERIENCE
+        </p>
+
+        <h2>
+          Enter the <span>Future.</span>
+        </h2>
+
+        <p class="section-description">
+          ELECTRONOVA brings together curious minds and technology enthusiasts
+          for an exciting exploration of electronics and the Internet of Things.
+          Be part of an experience where creativity meets engineering.
+        </p>
+
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <span class="feature-icon">⌘</span>
+          <h3>Innovate</h3>
+          <p>
+            Discover fresh ideas and explore emerging technologies.
+          </p>
+          <span class="card-index">01</span>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">✳</span>
+          <h3>Experiment</h3>
+          <p>
+            Turn concepts into practical and creative experiences.
+          </p>
+          <span class="card-index">02</span>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">⟡</span>
+          <h3>Connect</h3>
+          <p>
+            Meet fellow innovators and expand your network.
+          </p>
+          <span class="card-index">03</span>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- EVENT DETAILS -->
+    <section class="section event-section container reveal" id="details">
+
+      <div class="section-heading">
+
+        <p class="section-kicker">
+          02 / SAVE YOUR DATE
+        </p>
+
+        <h2>
+          The Mission <span>Begins Soon.</span>
+        </h2>
+
+      </div>
+
+      <div class="event-panel">
+
         <div class="event-info">
-            <div><span>EVENT DATES</span><strong>04–06 DECEMBER 2026</strong></div>
-            <div><span>VENUE</span><strong>VIT BHOPAL UNIVERSITY</strong></div>
-            <div><span>DOMAIN</span><strong>ELECTRONICS & IoT</strong></div>
+
+          <div class="event-detail">
+            <span>EVENT DATES</span>
+            <strong>04–06 DECEMBER 2026</strong>
+          </div>
+
+          <div class="event-detail">
+            <span>VENUE</span>
+            <strong>VIT BHOPAL UNIVERSITY</strong>
+          </div>
+
+          <div class="event-detail">
+            <span>DOMAIN</span>
+            <strong>ELECTRONICS &amp; IoT</strong>
+          </div>
+
         </div>
 
+        <!-- COUNTDOWN -->
         <div class="countdown-panel">
-            <p>COUNTDOWN TO ELECTRONOVA</p>
-            <div class="timer">
-                <div class="time-box"><strong id="days">00</strong><span>DAYS</span></div>
-                <div class="time-box"><strong id="hours">00</strong><span>HOURS</span></div>
-                <div class="time-box"><strong id="minutes">00</strong><span>MINUTES</span></div>
-                <div class="time-box"><strong id="seconds">00</strong><span>SECONDS</span></div>
-            </div>
-        </div>
-    </section>
 
-    <section class="registration-section section reveal" id="register">
-        <div class="registration-heading">
-            <p class="section-kicker">03 / YOUR JOURNEY STARTS HERE</p>
-            <h2>Ready to <span>Launch?</span></h2>
-            <p>Enter your details and take the first step into ELECTRONOVA 2026.</p>
-        </div>
+          <p class="countdown-title">
+            COUNTDOWN TO ELECTRONOVA
+          </p>
 
-        <form id="regForm" class="registration-form">
-            <div class="form-grid">
-                <div class="form-field">
-                    <label for="fullName">Full Name *</label>
-                    <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required>
-                </div>
+          <div class="timer">
 
-                <div class="form-field">
-                    <label for="registrationNumber">Registration Number *</label>
-                    <input id="registrationNumber" name="registrationNumber" type="text" placeholder="Enter your registration number" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="email">Email Address *</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your email address" required>
-                </div>
-
-                <div class="form-field">
-                    <label for="phone">Phone Number *</label>
-                    <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" pattern="[0-9+() -]{7,20}" required>
-                </div>
-
-                <div class="form-field full-width">
-                    <label for="participation">Registration Type *</label>
-                    <select id="participation" name="participation" required>
-                        <option value="">Select registration type</option>
-                        <option value="individual">Individual Registration</option>
-                        <option value="team">Team Registration</option>
-                    </select>
-                </div>
+            <div class="time-box">
+              <strong id="days">00</strong>
+              <span>DAYS</span>
             </div>
 
-            <p class="form-note">* Required fields. Your details will be used to continue to the registration form.</p>
-            <button type="submit" class="primary-button submit-button">Continue to Registration ↗</button>
-            <p id="formMessage" class="form-message" role="status"></p>
-        </form>
-    </section>
-</main>
+            <div class="time-box">
+              <strong id="hours">00</strong>
+              <span>HOURS</span>
+            </div>
 
-<footer class="footer">
-    <a href="#home" class="logo">ELECTRO<span>NOVA</span></a>
-    <p>Explore. Experiment. Engineer the Future.</p>
-    ```html
-<p class="contact-line">
-    For event queries:
-    <a id="contactEmail" href="mailto:vitronixclub@vitbhopal.ac.in">
-        vitronixclub@vitbhopal.ac.in
-    </a>
-</p>
-```
-    <p class="copyright">© 2026 ELECTRONOVA. All rights reserved.</p>
-</footer>
-</body>
-</html>
-</a></p>
-    <p class="copyright">© 2026 ELECTRONOVA. All rights reserved.</p>
-</footer>
-</body>
-</html>
-</a></p>
-    <p class="copyright">© 2026 ELECTRONOVA. All rights reserved.</p>
-</footer>
+            <div class="time-box">
+              <strong id="minutes">00</strong>
+              <span>MINUTES</span>
+            </div>
+
+            <div class="time-box">
+              <strong id="seconds">00</strong>
+              <span>SECONDS</span>
+            </div>
+
+          </div>
+
+          <p class="countdown-note">
+            The countdown is set to 04 December 2026, 9:00 AM IST.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- REGISTRATION SECTION -->
+    <section class="section registration-section container reveal" id="register">
+
+      <div class="registration-intro">
+
+        <p class="section-kicker">
+          03 / YOUR JOURNEY STARTS HERE
+        </p>
+
+        <h2>
+          Ready to <span>Launch?</span>
+        </h2>
+
+        <p>
+          Enter your details and take the first step into ELECTRONOVA 2026.
+        </p>
+
+      </div>
+
+      <form id="regForm" class="registration-form">
+
+        <div class="form-grid">
+
+          <div class="form-field">
+            <label for="fullName">
+              Full Name <span>*</span>
+            </label>
+
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              placeholder="Enter your full name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="registrationNumber">
+              Registration Number <span>*</span>
+            </label>
+
+            <input
+              id="registrationNumber"
+              name="registrationNumber"
+              type="text"
+              placeholder="Enter your registration number"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="email">
+              Email Address <span>*</span>
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email address"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="phone">
+              Phone Number <span>*</span>
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Enter your phone number"
+              autocomplete="tel"
+              pattern="[0-9+() -]{7,20}"
+              required
+            >
+          </div>
+
+          <div class="form-field form-field-wide">
+
+            <label for="participation">
+              Registration Type <span>*</span>
+            </label>
+
+            <select
+              id="participation"
+              name="participation"
+              required
+            >
+              <option value="">Select registration type</option>
+              <option value="individual">
+                Individual Registration
+              </option>
+              <option value="team">
+                Team Registration
+              </option>
+            </select>
+
+          </div>
+
+        </div>
+
+        <p class="form-note">
+          * Required fields. Your details will be used to continue to the registration form.
+        </p>
+
+        <button
+          type="submit"
+          class="button button-primary submit-button"
+        >
+          Continue to Registration <span>↗</span>
+        </button>
+
+        <p
+          id="formMessage"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-inner container">
+
+      <div>
+        <a class="logo" href="#home">
+          ELECTRO<span>NOVA</span>
+        </a>
+
+        <p class="footer-tagline">
+          Explore. Experiment. Engineer the Future.
+        </p>
+      </div>
+
+      <div class="footer-contact">
+
+        <span class="footer-label">
+          HAVE A QUESTION?
+        </span>
+
+        <a
+          id="contactEmail"
+          href="mailto:vitronixclub@vitbhopal.ac.in"
+        >
+          vitronixclub@vitbhopal.ac.in
+        </a>
+
+      </div>
+
+      <p class="copyright">
+        © 2026 ELECTRONOVA. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
 </body>
 </html>
