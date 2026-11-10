@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
 :root {
     --bg: #100b1d;
     --bg-soft: #191128;
@@ -110,9 +112,6 @@ main,
     z-index: 1;
 }
 
-/* =========================================
-   3. NAVIGATION
-========================================= */
 
 .site-header {
     position: sticky;
@@ -227,9 +226,7 @@ main,
     background: var(--cream);
 }
 
-/* =========================================
-   4. HERO SECTION
-========================================= */
+
 
 .hero {
     position: relative;
@@ -247,7 +244,9 @@ main,
 .hero-content {
     position: relative;
     z-index: 5;
+    width: 100%;
     max-width: 650px;
+    min-width: 0;
 }
 
 .eyebrow {
@@ -267,30 +266,34 @@ main,
     color: var(--violet);
 }
 
+
 .hero h1 {
+    width: 100%;
     margin-bottom: 20px;
 
     font-family: "Orbitron", sans-serif;
-    font-size: clamp(3.2rem, 6.3vw, 6.1rem);
+    font-size: clamp(2.2rem, 4.3vw, 4.2rem);
     font-weight: 800;
-    line-height: 1.08;
-    letter-spacing: -0.075em;
+    line-height: 1.15;
+    letter-spacing: -0.055em;
 
-    overflow-wrap: anywhere;
+    white-space: nowrap;
+    overflow-wrap: normal;
 }
 
 .hero h1 span {
+    display: inline;
     color: var(--violet);
     text-shadow: 0 0 30px rgba(164, 107, 255, 0.30);
 }
 
 .hero h1 small {
     display: block;
-    margin-top: 5px;
+    margin-top: 7px;
 
     color: var(--pink);
-    font-size: 0.42em;
-    letter-spacing: 0.20em;
+    font-size: 0.38em;
+    letter-spacing: 0.16em;
 }
 
 .hero-tagline {
@@ -310,7 +313,7 @@ main,
     line-height: 1.85;
 }
 
-/* Hero buttons */
+
 
 .hero-actions {
     display: flex;
@@ -554,12 +557,13 @@ main,
     letter-spacing: 0.20em;
 }
 
-/* Planet animations */
+
 
 @keyframes planetFloat {
     0%, 100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
@@ -570,6 +574,7 @@ main,
         opacity: 0.55;
         transform: scale(0.9);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.2);
@@ -694,9 +699,6 @@ h2 span {
     font-size: 0.8rem;
 }
 
-/* =========================================
-   8. EVENT SECTION
-========================================= */
 
 .event-section {
     padding-top: 72px;
@@ -811,19 +813,25 @@ h2 span {
     font-size: 0.75rem;
 }
 
-/* =========================================
-   9. REGISTRATION SECTION
-========================================= */
+
 
 .registration-section {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     align-items: start;
     gap: 48px;
+
+    font-family: "Exo 2", sans-serif;
+}
+
+.registration-section * {
+    font-family: "Exo 2", sans-serif;
 }
 
 .registration-intro h2 {
     margin-bottom: 16px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
 }
 
 .registration-intro p:last-child {
@@ -866,8 +874,9 @@ h2 span {
 
 .form-field label {
     color: var(--cream);
-    font-size: 0.88rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .form-field label span {
@@ -887,6 +896,9 @@ h2 span {
     color: var(--cream);
     background: rgba(8, 6, 16, 0.55);
 
+    font-size: 1rem;
+    font-weight: 500;
+
     transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease;
@@ -894,6 +906,8 @@ h2 span {
 
 .form-field input::placeholder {
     color: rgba(197, 184, 213, 0.55);
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
 }
 
 .form-field select {
@@ -914,6 +928,9 @@ h2 span {
 
 .submit-button {
     border: 0;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .form-message {
@@ -922,6 +939,112 @@ h2 span {
 
     color: var(--pink);
     font-size: 0.88rem;
+}
+
+
+.coordinators-section {
+    font-family: "Exo 2", sans-serif;
+}
+
+.coordinators-section * {
+    font-family: "Exo 2", sans-serif;
+}
+
+.coordinator-group {
+    margin-top: 35px;
+}
+
+.coordinator-category {
+    margin-bottom: 18px;
+
+    color: var(--pink);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.coordinator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.coordinator-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    min-width: 0;
+    padding: 27px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    background: linear-gradient(
+        145deg,
+        rgba(42, 27, 66, 0.85),
+        rgba(23, 15, 37, 0.9)
+    );
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.coordinator-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--violet);
+}
+
+.faculty-card {
+    max-width: 100%;
+
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.coordinator-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+    color: var(--pink);
+    background: rgba(164, 107, 255, 0.16);
+
+    font-size: 1.5rem;
+}
+
+.coordinator-card h4 {
+    color: var(--cream);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.coordinator-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.coordinator-card a {
+    max-width: 100%;
+
+    color: var(--pink);
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+
+    transition: color 0.2s ease;
+}
+
+.coordinator-card a:hover {
+    color: var(--cream);
 }
 
 
@@ -978,18 +1101,18 @@ h2 span {
 
 
 
-
 .reveal {
     opacity: 1;
     transform: none;
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
 }
 
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 
 @media (max-width: 1000px) {
@@ -1000,7 +1123,7 @@ h2 span {
     }
 
     .hero h1 {
-        font-size: clamp(3rem, 6vw, 5rem);
+        font-size: clamp(2rem, 4.3vw, 3.5rem);
     }
 
     .planet-ring {
@@ -1028,7 +1151,9 @@ h2 span {
     }
 }
 
-
+/* =========================================
+   14. MOBILE RESPONSIVENESS
+========================================= */
 
 @media (max-width: 680px) {
 
@@ -1111,7 +1236,11 @@ h2 span {
     }
 
     .hero h1 {
-        font-size: clamp(2.8rem, 13vw, 5rem);
+        font-size: clamp(1.65rem, 7.5vw, 3rem);
+    }
+
+    .hero h1 small {
+        font-size: 0.38em;
     }
 
     .hero-description {
@@ -1219,6 +1348,7 @@ h2 span {
     /* Registration */
 
     .registration-section {
+        grid-template-columns: 1fr;
         gap: 25px;
     }
 
@@ -1236,6 +1366,20 @@ h2 span {
 
     .submit-button {
         width: 100%;
+    }
+
+    /* Coordinators */
+
+    .coordinator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coordinator-card {
+        padding: 22px;
+    }
+
+    .faculty-card {
+        align-items: center;
     }
 
     /* Footer */
@@ -1262,7 +1406,11 @@ h2 span {
     }
 
     .hero h1 {
-        font-size: 2.65rem;
+        font-size: 1.45rem;
+    }
+
+    .hero h1 small {
+        font-size: 0.38em;
     }
 
     .hero-actions {
@@ -1328,160 +1476,5 @@ h2 span {
     .reveal {
         opacity: 1;
         transform: none;
-    }
-}
-
-
-
-.registration-section,
-.registration-section * {
-    font-family: "Exo 2", sans-serif;
-}
-
-.registration-intro h2 {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 800;
-}
-
-.registration-intro p,
-.registration-form,
-.form-field label,
-.form-field input,
-.form-field select,
-.form-note,
-.form-message,
-.submit-button {
-    font-family: "Exo 2", sans-serif;
-}
-
-.form-field label {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-}
-
-.form-field input,
-.form-field select {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.form-field input::placeholder {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 400;
-}
-
-.submit-button {
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-
-.coordinators-section {
-    font-family: "Exo 2", sans-serif;
-}
-
-.coordinator-group {
-    margin-top: 35px;
-}
-
-.coordinator-category {
-    margin-bottom: 18px;
-    color: var(--pink);
-    font-family: "Exo 2", sans-serif;
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.coordinator-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.coordinator-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    min-width: 0;
-    padding: 27px;
-
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-
-    background: linear-gradient(
-        145deg,
-        rgba(42, 27, 66, 0.85),
-        rgba(23, 15, 37, 0.9)
-    );
-
-    transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.coordinator-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--violet);
-}
-
-.faculty-card {
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    gap: 18px;
-}
-
-.coordinator-icon {
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-
-    border-radius: 14px;
-    color: var(--pink);
-    background: rgba(164, 107, 255, 0.16);
-    font-size: 1.5rem;
-}
-
-.coordinator-card h4 {
-    color: var(--cream);
-    font-family: "Exo 2", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.coordinator-card p {
-    color: var(--muted);
-    font-size: 0.9rem;
-}
-
-.coordinator-card a {
-    max-width: 100%;
-    color: var(--pink);
-    font-size: 0.85rem;
-    overflow-wrap: anywhere;
-    transition: color 0.2s ease;
-}
-
-.coordinator-card a:hover {
-    color: var(--cream);
-}
-
-
-
-@media (max-width: 680px) {
-    .coordinator-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .coordinator-card {
-        padding: 22px;
-    }
-
-    .faculty-card {
-        align-items: center;
     }
 }
