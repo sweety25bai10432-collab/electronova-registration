@@ -1332,9 +1332,9 @@ h2 span {
 }
 
 
-/* EXO 2 - Registration Section */
 
-.registration-section {
+.registration-section,
+.registration-section * {
     font-family: "Exo 2", sans-serif;
 }
 
@@ -1376,29 +1376,112 @@ h2 span {
     letter-spacing: 0.5px;
 }
 
-.hero-content h1 {
-    white-space: nowrap;
-    font-size: clamp(2rem, 7.5vw, 6.5rem);
-    letter-spacing: -0.06em;
-    line-height: 1.1;
-    width: max-content;
+
+.coordinators-section {
+    font-family: "Exo 2", sans-serif;
+}
+
+.coordinator-group {
+    margin-top: 35px;
+}
+
+.coordinator-category {
+    margin-bottom: 18px;
+    color: var(--pink);
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.coordinator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.coordinator-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+    padding: 27px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    background: linear-gradient(
+        145deg,
+        rgba(42, 27, 66, 0.85),
+        rgba(23, 15, 37, 0.9)
+    );
+
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.coordinator-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--violet);
+}
+
+.faculty-card {
     max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
 }
 
-.hero-content h1 span {
-    display: inline;
+.coordinator-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+    color: var(--pink);
+    background: rgba(164, 107, 255, 0.16);
+    font-size: 1.5rem;
 }
 
-.hero-content h1 small {
-    display: block;
-    font-size: 0.38em;
-    letter-spacing: 0.08em;
-    margin-top: 8px;
+.coordinator-card h4 {
+    color: var(--cream);
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
+
+.coordinator-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.coordinator-card a {
+    max-width: 100%;
+    color: var(--pink);
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.coordinator-card a:hover {
+    color: var(--cream);
+}
+
 
 
 @media (max-width: 680px) {
-    .hero-content h1 {
-        font-size: clamp(2rem, 9.5vw, 4rem);
+    .coordinator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coordinator-card {
+        padding: 22px;
+    }
+
+    .faculty-card {
+        align-items: center;
     }
 }
