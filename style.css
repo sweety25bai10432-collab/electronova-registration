@@ -1332,34 +1332,75 @@ h2 span {
         transform: none;
     }
 }
-/* Modern typography for registration form */
-.registration-form {
-    font-family: "Outfit", sans-serif;
+
+
+/* EXO 2 - Registration Section */
+
+.registration-section {
+    font-family: "Exo 2", sans-serif;
+}
+
+.registration-intro h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+}
+
+.registration-intro p,
+.registration-form,
+.form-field label,
+.form-field input,
+.form-field select,
+.form-note,
+.form-message,
+.submit-button {
+    font-family: "Exo 2", sans-serif;
 }
 
 .form-field label {
-    font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .form-field input,
 .form-field select {
-    font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.3px;
+    font-weight: 500;
 }
 
 .form-field input::placeholder {
-    font-family: "Outfit", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: 400;
-    opacity: 0.8;
 }
 
-.form-note,
-.form-message,
 .submit-button {
-    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+    white-space: nowrap;
+    font-size: clamp(2rem, 7.5vw, 6.5rem);
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+    width: max-content;
+    max-width: 100%;
+}
+
+.hero-content h1 span {
+    display: inline;
+}
+
+.hero-content h1 small {
+    display: block;
+    font-size: 0.38em;
+    letter-spacing: 0.08em;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 680px) {
+    .hero-content h1 {
+        font-size: clamp(2rem, 9.5vw, 4rem);
+    }
 }
