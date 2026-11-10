@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-
 :root {
     --bg: #100b1d;
     --bg-soft: #191128;
@@ -267,12 +266,13 @@ main,
 }
 
 
+
 .hero h1 {
     width: 100%;
     margin-bottom: 20px;
 
     font-family: "Orbitron", sans-serif;
-    font-size: clamp(2.2rem, 4.3vw, 4.2rem);
+    font-size: clamp(2rem, 3.8vw, 3.7rem);
     font-weight: 800;
     line-height: 1.15;
     letter-spacing: -0.055em;
@@ -298,7 +298,6 @@ main,
 
 .hero-tagline {
     margin-bottom: 15px;
-
     color: var(--cream);
     font-size: clamp(1.1rem, 2vw, 1.4rem);
     font-weight: 600;
@@ -307,13 +306,10 @@ main,
 .hero-description {
     max-width: 550px;
     margin-bottom: 28px;
-
     color: var(--muted);
     font-size: 1rem;
     line-height: 1.85;
 }
-
-
 
 .hero-actions {
     display: flex;
@@ -338,10 +334,9 @@ main,
     font-weight: 700;
 
     cursor: pointer;
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        background 0.25s ease;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background 0.25s ease;
 }
 
 .button:hover {
@@ -379,6 +374,24 @@ main,
     font-size: 0.84rem;
 }
 
+/* RESPONSIVE HEADING */
+@media (max-width: 1000px) {
+    .hero h1 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+}
+
+@media (max-width: 680px) {
+    .hero h1 {
+        font-size: clamp(1.5rem, 6.5vw, 2.5rem);
+    }
+}
+
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 1.35rem;
+    }
+}
 
 
 .planet-scene {
