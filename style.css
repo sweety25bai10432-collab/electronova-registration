@@ -1332,3 +1332,34 @@ h2 span {
         transform: none;
     }
 }
+/* Modern typography for registration form */
+.registration-form {
+    font-family: "Outfit", sans-serif;
+}
+
+.form-field label {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.form-field input,
+.form-field select {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.form-field input::placeholder {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.form-note,
+.form-message,
+.submit-button {
+    font-family: "Outfit", sans-serif;
+}
